@@ -168,7 +168,7 @@ static const unsigned char char_to_seg(unsigned char c)
 		return SEG_UL|SEG_UR|SEG_U;
 	case '-':
 		return SEG_M;
-	case 'Â°':
+	case '°':
 		return SEG_O|SEG_M|SEG_OL|SEG_OR;
 	case '"':
 		return SEG_OL|SEG_OR;
@@ -178,13 +178,13 @@ static const unsigned char char_to_seg(unsigned char c)
 		return SEG_OL|SEG_M|SEG_UR;
 	case '/':
 		return SEG_OR|SEG_M|SEG_UL;
-	case 'Ã–':
-	case 'Ã¶':
+	case 'Ö':
+	case 'ö':
 		return SEG_O|SEG_M|SEG_UL|SEG_UR|SEG_U;
-	case 'Ãœ':
-	case 'Ã¼':
+	case 'Ü':
+	case 'ü':
 		return SEG_O|SEG_UL|SEG_UR|SEG_U;
-	case 'Âµ':
+	case 'µ':
 		return SEG_OL|SEG_UL|SEG_M|SEG_OR;
 	case '_':
 		return SEG_U;
