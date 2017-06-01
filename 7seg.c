@@ -202,6 +202,9 @@ const unsigned char char_to_seg(unsigned char c)
 	case 'L':
 	case 'l':
 		return SEG_OL|SEG_UL|SEG_U;
+	case 'M':
+	case 'm':
+		return SEG_UL|SEG_UR|SEG_OL|SEG_OR|SEG_O;
 	case 'N':
 	case 'n':
 		return SEG_UL|SEG_M|SEG_UR;
